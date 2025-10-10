@@ -13,5 +13,5 @@ Below are views of the GPU simulation mesh:
 ![GPU Mesh - Boundary Layer](BL_1.png)
 ![GPU Mesh - Boundary Layer Zoomed](BL_2.png)
 
-![GPU Mesh - Internals](GPU_Mesh_Int1)
-![GPU Mesh - Internals](GPU_Mesh_Int2)
+![GPU Mesh - Internals](GPU_Mesh_Int1.png)
+![GPU Mesh - Internals](GPU_Mesh_Int2.png)
