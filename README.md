@@ -6,5 +6,5 @@ This is a work in progress...
 
 Below are views of the GPU simulation mesh:
 
-![GPU Mesh - Front View](GPU_Mesh_1.PNG)
-![GPU Mesh - Isometric View](GPU_Mesh_2.PNG)
+![GPU Mesh - Front View](GPU_Mesh_1.png)
+![GPU Mesh - Isometric View](GPU_Mesh_2.png)
