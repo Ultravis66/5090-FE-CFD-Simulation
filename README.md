@@ -21,13 +21,17 @@ The GPU cooling simulation domain includes the following major regions:
 
 | Region / Part        | Type  | Notes |
 |----------------------|-------|------------------|--------------------------|-------------------------------|-------|
-| **Case**             | Air |  Enclosure domain with external air flow boundaries |
 | **Circuit Board**    | Solid | PCB substrate (low-conductivity composite) |
 | **Die**              | Solid | Silicon die (high thermal conductivity) |
 | **Vapor Chamber**    | Solid | Orthotropic: 40,000 (axial), 401 (transverse) | Copper vapor chamber with embedded heat pipes |
 | **Fan 1 / Fan 2**    | Overset Region | Rotating meshes with **Rigid Body Motion (RBM)** applied |
 | **Heat Sink**        | Porous Medium (Solid + Fluid) | 2700.0 | 903.0 | Orthotropic: 0.026 (xx), 237.0 (yy, zz) | Porosity = 0.667; Orthotropic porous resistance applied (see below) |
 
+---
+**Case**
+- sides set to walls
+- inlet at the bottom set to 0.6 m/s
+- outlet at the top
 ---
 
 ### Heat Sink Porous Medium Properties
