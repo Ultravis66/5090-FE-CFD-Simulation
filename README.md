@@ -16,7 +16,7 @@ The GPU cooling simulation domain includes the following major components:
 | **Die**              | Solid | 2330.0 | 700.0  | 130.0 | Silicon die with high thermal conductivity |
 | **Vapor Chamber**    | Solid | 8800.0 | 400.0  | Orthotropic: 40,000 (axial), 401 (transverse) | Copper vapor chamber with embedded heat pipes |
 
-## 🧩 Domain and Material Setup
+## Domain and Material Setup
 
 The GPU cooling simulation domain includes the following major regions:
 
