@@ -8,13 +8,55 @@ This is a simulation of the Founders Edition 5090 Nvidia GPU:
 
 The GPU cooling simulation domain includes the following major components:
 
-| Region / Part        | Type  | Density (kg/m³) | Specific Heat (J/kg·K) | Thermal Conductivity (W/m·K) | Notes |
+| Continua       | Type  | Density (kg/m³) | Specific Heat (J/kg·K) | Thermal Conductivity (W/m·K) | Notes |
 |----------------------|-------|------------------|--------------------------|-------------------------------|-------|
 | **Fluid Volume**     | Fluid | 1.18 | 1003.62  | 0.026 | Air domain for conjugate heat transfer (CHT) |
 | **Circuit Board**    | Solid | 1800.0 | 1100.0 | 0.5 | Represents PCB substrate (low-conductivity composite) |
 | **Die**              | Solid | 2330.0 | 700.0  | 130.0 | Silicon die with high thermal conductivity |
 | **Vapor Chamber**    | Solid | 8800.0 | 400.0  | Orthotropic: 40,000 (axial), 401 (transverse) | Copper vapor chamber with embedded heat pipes |
-| **Heat Sink**        | Solid | — | — | — | Aluminum heat sink modeled with detailed fin geometry |
+
+## 🧩 Domain and Material Setup
+
+The GPU cooling simulation domain includes the following major regions:
+
+| Region / Part        | Type  | Notes |
+|----------------------|-------|------------------|--------------------------|-------------------------------|-------|
+| **Case**             | Air |  Enclosure domain with external air flow boundaries |
+| **Circuit Board**    | Solid | PCB substrate (low-conductivity composite) |
+| **Die**              | Solid | Silicon die (high thermal conductivity) |
+| **Vapor Chamber**    | Solid | Orthotropic: 40,000 (axial), 401 (transverse) | Copper vapor chamber with embedded heat pipes |
+| **Fan 1 / Fan 2**    | Overset Region | Rotating meshes with **Rigid Body Motion (RBM)** applied |
+| **Heat Sink**        | Porous Medium (Solid + Fluid) | 2700.0 | 903.0 | Orthotropic: 0.026 (xx), 237.0 (yy, zz) | Porosity = 0.667; Orthotropic porous resistance applied (see below) |
+
+---
+
+### Heat Sink Porous Medium Properties
+
+**Porosity:** 0.667  
+
+**Orthotropic Inertial Resistance:**  
+- xx: 100,000.0 kg/m⁴  
+- yy: 300.0 kg/m⁴  
+- zz: 500.0 kg/m⁴  
+
+**Orthotropic Viscous Resistance:**  
+- xx: 10,000.0 kg/m³·s  
+- yy: 250.0 kg/m³·s  
+- zz: 500.0 kg/m³·s  
+
+**Thermal Conductivity (Orthotropic):**  
+- xx: 0.026 W/m·K  
+- yy, zz: 237.0 W/m·K  
+
+---
+
+💡 **Notes:**
+- Fans are modeled as **overset meshes** to allow rotational motion through the fluid domain, coupled via RBM (Rigid Body Motion).  
+- The **heat sink** is treated as a **porous region** to account for detailed fin flow resistance while retaining conjugate heat transfer effects.  
+- The **vapor chamber** uses orthotropic conductivity to capture high in-plane thermal spreading along the embedded pipe network.
+
+---
+
 
 ---
 
