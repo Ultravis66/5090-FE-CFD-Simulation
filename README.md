@@ -26,21 +26,23 @@ The GPU cooling simulation domain includes the following major regions:
 | **Die**              | Solid | Silicon die (high thermal conductivity) |
 | **Vapor Chamber**    | Solid | Orthotropic: 40,000 (axial), 401 (transverse) | Copper vapor chamber with embedded heat pipes |
 | **Fan 1 / Fan 2**    | Overset Region | Rotating meshes with **Rigid Body Motion (RBM)** applied |
-| **Heat Sink**        | Porous Medium (Solid + Fluid) | 2700.0 | 903.0 | Orthotropic: 0.026 (xx), 237.0 (yy, zz) | Porosity = 0.667; Orthotropic porous resistance applied (see below) |
 
----
-**Case**
-- sides set to walls
-- inlet at the bottom set to 0.6 m/s
-- outlet at the top
----
+ ---
+The GPU cooling simulation domain includes the following major regions:
+
+| Region / Part | Type | Notes |
+|----------------|------|-------|
+| **Circuit Board** | Solid | PCB substrate (low-conductivity composite) |
+| **Die** | Solid | Silicon die (high thermal conductivity) |
+| **Vapor Chamber** | Solid | Orthotropic: 40,000 W/m·K (axial), 401 W/m·K (transverse); copper vapor chamber with embedded heat pipes |
+| **Fan 1 / Fan 2** | Overset Region | Rotating meshes with **Rigid Body Motion (RBM)** applied |
 
 ### Heat Sink Porous Medium Properties
 
 **Porosity:** 0.667  
 
 **Orthotropic Inertial Resistance:**  
-- xx: 100,000.0 kg/m⁴  
+- xx: 10,000.0 kg/m⁴  
 - yy: 300.0 kg/m⁴  
 - zz: 500.0 kg/m⁴  
 
@@ -51,7 +53,16 @@ The GPU cooling simulation domain includes the following major regions:
 
 **Thermal Conductivity (Orthotropic):**  
 - xx: 0.026 W/m·K  
-- yy, zz: 237.0 W/m·K  
+- yy, 237.0 W/m·K  
+- zz, 237.0 W/m-k
+
+---
+**Case**
+- sides set to walls
+- inlet at the bottom set to 0.6 m/s
+- outlet at the top
+---
+
 
 ---
 
