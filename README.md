@@ -12,7 +12,7 @@ The GPU cooling simulation domain includes the following major components:
 | Continua       | Type  | Density (kg/m³) | Specific Heat (J/kg·K) | Thermal Conductivity (W/m·K) | Notes |
 |----------------------|-------|------------------|--------------------------|-------------------------------|-------|
 | **Fluid Volume**     | Fluid | 1.18 | 1003.62  | 0.026 | Air domain for conjugate heat transfer (CHT) |
-| **Circuit Board**    | Solid | 1800.0 | 1100.0 | 0.5 | Represents PCB substrate (low-conductivity composite) |
+| **PCB**              | Solid | 1800.0 | 1100.0 | 0.5 | Represents PCB substrate (low-conductivity composite) |
 | **Die**              | Solid | 2330.0 | 700.0  | 130.0 | Silicon die with high thermal conductivity |
 | **Vapor Chamber**    | Solid | 8800.0 | 400.0  | Orthotropic: 40,000 (axial), 401 (transverse) | Copper vapor chamber with embedded heat pipes |
 ---
@@ -32,8 +32,8 @@ The GPU cooling simulation domain includes the following major regions:
 
 | Region / Part | Type | Notes |
 |----------------|------|-------|
-| **Circuit Board** | Solid | PCB substrate (low-conductivity composite) |
-| **Die** | Solid | Silicon die (high thermal conductivity) |
+| **PCB**           | Solid | PCB substrate (low-conductivity composite) |
+| **Die**           | Solid | Silicon die (high thermal conductivity) |
 | **Vapor Chamber** | Solid | Orthotropic: 40,000 W/m·K (axial), 401 W/m·K (transverse); copper vapor chamber with embedded heat pipes |
 | **Fan 1 / Fan 2** | Overset Region | Rotating meshes with **Rigid Body Motion (RBM)** applied |
 
