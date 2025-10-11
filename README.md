@@ -20,21 +20,11 @@ The GPU cooling simulation domain includes the following major components:
 
 The GPU cooling simulation domain includes the following major regions:
 
-| Region / Part        | Type  | Notes |
-|----------------------|-------|------------------|--------------------------|-------------------------------|-------|
-| **Circuit Board**    | Solid | PCB substrate (low-conductivity composite) |
-| **Die**              | Solid | Silicon die (high thermal conductivity) |
-| **Vapor Chamber**    | Solid | Orthotropic: 40,000 (axial), 401 (transverse) | Copper vapor chamber with embedded heat pipes |
-| **Fan 1 / Fan 2**    | Overset Region | Rotating meshes with **Rigid Body Motion (RBM)** applied |
-
- ---
-The GPU cooling simulation domain includes the following major regions:
-
 | Region / Part | Type | Notes |
 |----------------|------|-------|
 | **PCB**           | Solid | PCB substrate (low-conductivity composite) |
 | **Die**           | Solid | Silicon die (high thermal conductivity) |
-| **Vapor Chamber** | Solid | Orthotropic: 40,000 W/m·K (axial), 401 W/m·K (transverse); copper vapor chamber with embedded heat pipes |
+| **Vapor Chamber** | Solid | Orthotropic: 12,000 W/m·K (axial and vertical off the Die), 150 W/m·K perpendicular to the heat pipes |
 | **Fan 1 / Fan 2** | Overset Region | Rotating meshes with **Rigid Body Motion (RBM)** applied |
 
 ### Heat Sink Porous Medium Properties
