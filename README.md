@@ -57,24 +57,12 @@ The GPU cooling simulation domain includes the following major regions:
 ---
 
 💡 **Notes:**
-- Fans are modeled as **overset meshes** to allow rotational motion through the fluid domain, coupled via RBM (Rigid Body Motion).  
-- The **heat sink** is treated as a **porous region** to account for detailed fin flow resistance while retaining conjugate heat transfer effects.  
-- The **vapor chamber** uses orthotropic conductivity to capture high in-plane thermal spreading along the embedded pipe network.
-
----
-
-
----
-
-💡 **Notes:**
-- The vapor chamber is modeled as an **orthotropic solid**, with extremely high thermal conductivity along the pipe direction (40,000 W/m·K) and isotropic transverse conductivity (401 W/m·K).  
 - The conjugate heat transfer (CHT) interface couples the **die, vapor chamber, heat sink, and air** regions.
-- Fans are represented as rotating reference frames (MRF) or rigid-body motion (RBM) zones depending on simulation setup.
+- Fans are represented as rotating reference frames (MRF) or rigid-body motion (RBM) zones depending on simulation setup (both cases were sim'ed).
+- The **heat sink** is treated as a **porous region** to account for detailed fin flow resistance while retaining conjugate heat transfer effects.  
+- The vapor chamber is modeled as an orthotropic solid to represent the high in-plane heat spreading provided by the embedded wick and vapor core. In detailed simulations, a true vapor chamber is often represented by a five-layer structure (top cover, top wick, vapor core, bottom wick, and bottom cover) to capture phase-change and capillary effects. For demonstration purposes, this model simplifies the vapor chamber into a single anisotropic solid block with equivalent thermal properties and can be off by as mubh as 20%.
 
 ---
-
-
-
 
 ## Mesh Setup
 
