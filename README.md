@@ -14,7 +14,7 @@ The GPU cooling simulation domain includes the following major components:
 | **Fluid Volume**     | Fluid | 1.18 | 1003.62  | 0.026 | Air domain for conjugate heat transfer (CHT) |
 | **PCB**              | Solid | 1800.0 | 1100.0 | 0.5 | Represents PCB substrate (low-conductivity composite) |
 | **Die**              | Solid | 2330.0 | 700.0  | 130.0 | Silicon die with high thermal conductivity |
-| **Vapor Chamber**    | Solid | 8800.0 | 400.0  | Orthotropic: 40,000 (axial), 401 (transverse) | Copper vapor chamber with embedded heat pipes |
+| **Vapor Chamber**    | Solid | 8800.0 | 400.0  | Orthotropic: 20,000 (axial and traverse), 1500 (transverse) | vapor chamber with embedded heat pipes |
 ---
 ## Domain and Material Setup
 
