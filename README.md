@@ -82,8 +82,9 @@ Below are views of the GPU simulation mesh:
 ![GPU Mesh - Internals](GPU_Mesh_Int1.png)
 ![GPU Mesh - Internals](GPU_Mesh_Int2.png)
 
-- This visualization models transient heat transfer through the RTX 5090 FE under a 600 W thermal load. The GPU die receives 450 W, and the PCB receives 150 W (future project would actually model the memory modules).
+- This visualization models transient conjugate heat transfer through the RTX 5090 FE under a 600 W thermal load. The GPU die receives 450 W, and the PCB receives 150 W (future project would actually model the memory modules).
 - Dual fans are simulated with Rigid Body Motion (RBM) to generate realistic airflow and convection through the porous heat-sink region.
 - The simulation captures full heat transfer across the die, vapor chamber, heat sink, and PCB.
 
-[![Heat Transfer though Video Card](https://img.youtube.com/watch?v=_VzF4xa2fiY.jpg)](https://www.youtube.com/watch?v=_VzF4xa2fiY "Play on YouTube")
+[![Heat Transfer through Video Card](https://img.youtube.com/vi/_VzF4xa2fiY/0.jpg)](https://www.youtube.com/watch?v=_VzF4xa2fiY "Play on YouTube")
+
