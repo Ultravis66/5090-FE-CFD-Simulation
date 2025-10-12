@@ -119,3 +119,41 @@ This significant discrepancy between local and average velocities reveals that a
 ## The video below shows the blockage from the dead zone closer to center as well as from the heat pipes:
 
 [![Spinning Fans](https://img.youtube.com/vi/7pTZv4on8lE/0.jpg)](https://www.youtube.com/watch?v=7pTZv4on8lE "Play on YouTube")
+
+## Temperature Analysis
+
+### Coolant Temperature Results
+
+**Inlet Temperature:** ~70°C (average)  
+**Outlet Temperature:** ~64°C (average)  
+**Temperature Change:** ΔT ≈ -6°C (cooling)
+
+![Inlet Temperature](Medium_Temp_in.png)
+![Outlet Temperature](Medium_Temp_out.png)
+
+### Flow Stagnation and Hot Spots
+
+The counterintuitive temperature drop (inlet hotter than outlet) reveals a critical design flaw in the cooling architecture. This occurs due to:
+
+- **Flow stagnation zones** where air becomes trapped with poor circulation
+- **Non-uniform flow distribution** through the porous media
+- **Hot pockets** forming in blocked regions (70°C) while main flow paths remain cooler (64°C)
+
+The inlet temperature monitor is capturing air in a stagnant/recirculation zone that has been heated significantly, while the outlet monitor measures the primary flow path where air moves more freely through the fins.
+
+### Porous Media Temperature Distribution
+
+![Porous Media Temperature Contour](Por_Temps.png)
+
+The temperature contour clearly shows:
+- **Non-uniform thermal distribution** across the heatsink
+- **Hot spots** correlating with dead flow zones
+- **Significant temperature gradients** indicating poor flow coupling
+
+With only ~33% of the fin area receiving adequate airflow (1.5 m/s in active regions vs 0.515 m/s average), approximately 2/3 of the heatsink mass is underutilized, creating localized thermal buildup and reducing overall cooling efficiency.
+
+### Design Implications
+
+This represents a fundamental flaw in the Founders Edition cooling design where aesthetic considerations and packaging constraints have created flow bypass paths and stagnation zones, leaving significant cooling performance on the table.
+
+
