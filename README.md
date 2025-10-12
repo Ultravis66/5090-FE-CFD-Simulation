@@ -89,3 +89,5 @@ Below are views of the GPU simulation mesh:
 [![Heat Transfer through Video Card](https://img.youtube.com/vi/_VzF4xa2fiY/0.jpg)](https://www.youtube.com/watch?v=_VzF4xa2fiY "Play on YouTube")
 
 [![Spinning Fans](https://img.youtube.com/vi/wrNYMDpBpxU/0.jpg)](https://www.youtube.com/watch?v=wrNYMDpBpxU "Play on YouTube")
+
+[![Spinning Fans](https://img.youtube.com/vi/7pTZv4on8lE/0.jpg)](https://www.youtube.com/watch?v=7pTZv4on8lE "Play on YouTube")
