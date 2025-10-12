@@ -87,4 +87,35 @@ Below are views of the GPU simulation mesh:
 
 [![Spinning Fans](https://img.youtube.com/vi/wrNYMDpBpxU/0.jpg)](https://www.youtube.com/watch?v=wrNYMDpBpxU "Play on YouTube")
 
+## Pressure Analysis
+
+### Static Pressure Results
+
+**Inlet Static Pressure:** ~10 Pa (average)  
+**Outlet Static Pressure:** ~-0.4 Pa (average)  
+**Pressure Drop:** ΔP ≈ 10.4 Pa
+
+![Inlet Static Pressure](Static_P_in.png)
+![Outlet Static Pressure](Static_P_out.png)
+
+### Static Pressure Interpretation:
+
+The pressure drop across the heatsink assembly is approximately 10.4 Pa, which is relatively low for a GPU cooling solution. This indicates:
+
+- **Low flow resistance** through the fin stack
+- **Significant flow bypass** around the porous media
+- **Dead zones** with stagnant air contributing to reduced effective flow area
+
+The negative outlet pressure (-0.4 Pa) indicates a slight vacuum condition at the exhaust, typical for pusher fan configurations where air expands into open space after exiting the heatsink.
+
+### Flow Characteristics
+
+- **Volume-averaged velocity through fins:** 0.515 m/s
+- **Velocity in active flow regions:** ~1.5 m/s
+- **Estimated effective fin utilization:** ~33%
+
+This significant discrepancy between local and average velocities reveals that approximately 2/3 of the fin area experiences poor or stagnant flow, representing a major design inefficiency in the Founders Edition cooling architecture.
+
+
+
 [![Spinning Fans](https://img.youtube.com/vi/7pTZv4on8lE/0.jpg)](https://www.youtube.com/watch?v=7pTZv4on8lE "Play on YouTube")
