@@ -49,9 +49,9 @@ The GPU cooling simulation domain includes the following major regions:
 
 ---
 **Case**
-- sides set to walls
-- inlet at the bottom set to 0.6 m/s
-- outlet at the top
+- sides set to walls with convection of 25 w/m^2-K
+- inlet at the bottom set to mass flow of 0.088 kg/s
+- Pressure outlet at the top
 ---
 **Click To Play video on Youtube**
 ---
