@@ -1,5 +1,3 @@
-# This is a work in progress!
-- I am still working on realistic physics for the PCB/Die/Vapor Chamber to match real world test data.
 # 5090-FE-CFD-Simulation
 This is a simulation of the Founders Edition 5090 Nvidia GPU:
 
