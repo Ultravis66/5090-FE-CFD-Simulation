@@ -133,13 +133,11 @@ This significant discrepancy between local and average velocities reveals that a
 
 ### Flow Stagnation and Hot Spots
 
-The counterintuitive temperature drop (inlet hotter than outlet) reveals a critical design flaw in the cooling architecture. This occurs due to:
+The counterintuitive temperature drop (inlet hotter than outlet) is from the cooling architecture. This occurs due to:
 
-- **Flow stagnation zones** where air becomes trapped with poor circulation
+- **Flow stagnation zones** where air becomes trapped with poor flow through
 - **Non-uniform flow distribution** through the porous media
-- **Hot pockets** forming in blocked regions (70°C) while main flow paths remain cooler (64°C)
-
-The inlet temperature monitor is capturing air in a stagnant/recirculation zone that has been heated significantly, while the outlet monitor measures the primary flow path where air moves more freely through the fins.
+- **Hot pockets** forming in blocked regions
 
 ### Porous Media Temperature Distribution
 
@@ -148,12 +146,8 @@ The inlet temperature monitor is capturing air in a stagnant/recirculation zone 
 The temperature contour clearly shows:
 - **Non-uniform thermal distribution** across the heatsink
 - **Hot spots** correlating with dead flow zones
-- **Significant temperature gradients** indicating poor flow coupling
+- **Significant temperature gradients**
 
-With only ~33% of the fin area receiving adequate airflow (1.5 m/s in active regions vs 0.515 m/s average), approximately 2/3 of the heatsink mass is underutilized, creating localized thermal buildup and reducing overall cooling efficiency.
-
-### Design Implications
-
-This represents a fundamental flaw in the Founders Edition cooling design where aesthetic considerations and packaging constraints have created flow bypass paths and stagnation zones, leaving significant cooling performance on the table.
+With only ~33% of the fin area receiving adequate airflow (1.5 m/s in active regions vs 0.515 m/s average), there are parts of the heatsink mass that is underutilized, creating localized thermal buildup and reducing overall cooling efficiency.
 
 
