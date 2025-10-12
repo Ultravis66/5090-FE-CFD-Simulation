@@ -3,9 +3,6 @@
 # 5090-FE-CFD-Simulation
 This is a simulation of the Founders Edition 5090 Nvidia GPU:
 
-
-
-
 ## Domain and Material Setup
 
 The GPU cooling simulation domain includes the following major components:
