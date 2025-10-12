@@ -116,6 +116,6 @@ The negative outlet pressure (-0.4 Pa) indicates a slight vacuum condition at th
 
 This significant discrepancy between local and average velocities reveals that approximately 2/3 of the fin area experiences poor or stagnant flow, representing a major design inefficiency in the Founders Edition cooling architecture.
 
-
+## The video below shows the blockage from the dead zone closer to center as well as from the heat pipes:
 
 [![Spinning Fans](https://img.youtube.com/vi/7pTZv4on8lE/0.jpg)](https://www.youtube.com/watch?v=7pTZv4on8lE "Play on YouTube")
