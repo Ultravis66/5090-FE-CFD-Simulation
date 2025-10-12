@@ -52,7 +52,7 @@ The GPU cooling simulation domain includes the following major regions:
 - inlet at the bottom set to 0.6 m/s
 - outlet at the top
 ---
-[![Transient Startup of Heat transfer initialized at 300 Kelvin](https://img.https://www.youtube.com/watch?v=3fXF4ODPPvA.jpg)]((https://www.youtube.com/watch?v=3fXF4ODPPvA) "Play on YouTube")
+[![Transient Startup of Heat Transfer initialized at 300 K](https://img.youtube.com/vi/3fXF4ODPPvA/0.jpg)](https://www.youtube.com/watch?v=3fXF4ODPPvA "Play on YouTube")
 
 ---
 
