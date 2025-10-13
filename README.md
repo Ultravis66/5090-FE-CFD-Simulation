@@ -121,10 +121,12 @@ This significant discrepancy between local and average velocities reveals that a
 
 **Inlet Temperature:** ~70°C (average)  
 **Outlet Temperature:** ~64°C (average)  
-**Temperature Change:** ΔT ≈ -6°C (cooling)
+**Temperature Change:** ΔT ≈ -6°C
 
 ![Inlet Temperature](Medium_Temp_in.png)
 ![Outlet Temperature](Medium_Temp_out.png)
+
+-**Die Temperature stablizes at 87°C
 
 ### Flow Stagnation and Hot Spots
 
