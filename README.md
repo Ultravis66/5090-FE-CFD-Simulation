@@ -126,7 +126,7 @@ This significant discrepancy between local and average velocities reveals that a
 ![Inlet Temperature](Medium_Temp_in.png)
 ![Outlet Temperature](Medium_Temp_out.png)
 
--**Die Temperature stablizes at 87°C
+-**Die** Temperature stablizes at 87°C
 
 ### Flow Stagnation and Hot Spots
 
