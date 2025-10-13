@@ -53,10 +53,9 @@ The GPU cooling simulation domain includes the following major regions:
 [![Transient Startup of Heat Transfer initialized at 300 K](https://img.youtube.com/vi/3fXF4ODPPvA/0.jpg)](https://www.youtube.com/watch?v=3fXF4ODPPvA "Play on YouTube")
 - First test run to ensure thermals and fans are spinning
 - Flow through porous medium working
-- Heat transfer through all mediums working as intended
-- Done to ensure all multiphysics is working as intended
+- Heat transfer through all solids working as intended
 
-💡 **Notes:**
+**Notes:**
 - The conjugate heat transfer (CHT) interface couples the **die, vapor chamber, heat sink, and air** regions.
 - Fans are represented as rotating reference frames (MRF) or rigid-body motion (RBM) zones depending on simulation setup (both cases were sim'ed).
 - The **heat sink** is treated as a **porous region** to account for detailed fin flow resistance while retaining conjugate heat transfer effects.  
