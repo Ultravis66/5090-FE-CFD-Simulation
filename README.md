@@ -83,6 +83,8 @@ Below are views of the GPU simulation mesh:
 
 [![Spinning Fans](https://img.youtube.com/vi/wrNYMDpBpxU/0.jpg)](https://www.youtube.com/watch?v=wrNYMDpBpxU "Play on YouTube")
 
+![Cut Plane Temperature Contours](5090FEtemp.png)
+
 ## Pressure Analysis
 
 ### Static Pressure Results
