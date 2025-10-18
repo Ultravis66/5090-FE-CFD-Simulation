@@ -19,7 +19,7 @@ The GPU cooling simulation domain includes the following major regions:
 | **Case**          | Fluid   | Fluid Region Mass flow at the bottom pressure outlet at the top |
 | **PCB**           | Solid   | PCB substrate (low-conductivity composite) |
 | **Die**           | Solid   | Silicon die (high thermal conductivity) |
-| **Vapor Chamber** | Solid   | Orthotropic: firet attemps: 12,000 W/m·K (axial and vertical off the Die), 150 W/m·K perpendicular to the heat pipes(runaway die temps) updates to values states above. |
+| **Vapor Chamber** | Solid   | Orthotropic: firet attemps: 12,000 W/m·K (axial and vertical off the Die), 150 W/m·K perpendicular to the heat pipes(runaway die temps) updated to values states above. (difficult to find accute values for VC TK) |
 | **Fan 1 / Fan 2** | Overset | Rotating meshes with **Rigid Body Motion (RBM)** applied |
 
 ### Heat Sink Porous Medium Properties
