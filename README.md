@@ -146,4 +146,4 @@ The temperature contour shows:
 
 With only ~35% of the fin area receiving adequate airflow (1.5 m/s in active regions vs 0.515 m/s average), there are parts of the heatsink mass that is underutilized, creating localized thermal buildup and reducing overall cooling efficiency.
 
-**Note:** Simulated temperatures are approximately 10°C higher than benchmark testing results, suggesting model conservatism or potential differences in boundary conditions/material properties compared to real-world operation.
+**Note:** Simulated temperatures are approximately 10°C higher than benchmark testing results, suggesting model conservatism or potential differences in boundary conditions/material properties compared to real-world operation. future sims will include radiation.
