@@ -148,5 +148,6 @@ With only ~35% of the fin area receiving adequate airflow (1.5 m/s in active reg
 
 **Notes:** 
 - Simulated temperatures run ~10 °C higher than public benchmarks. Likely causes include conservative boundary conditions, approximate material properties, and simplified contact resistances. 
-- Geometry fidelity: Accurate geometry available for fins, fans, enclosure. Vapor chamber/heat pipes (may not perfectly match FE dimensions). GPU die and PCB geometry are estimated from teardown references.
+- Geometry fidelity: Accurate geometry available for fins, fans, enclosure. Vapor chamber/heat pipes (may not perfectly match FE dimensions). GPU die and PCB geometry are estimated from teardown references and simplified to 2 parts.
 - Power mapping: 450 W die / 150 W board used as a first-order split. With detailed PCB and package geometry, power would be allocated per component (die, VRAM packages, VRM stages) with appropriate surface fluxes and contact conductance.
+- Radiation was also modeled on a steady-state simulation using MRF for the fans with no measurable change in die temperatures
