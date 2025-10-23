@@ -146,4 +146,7 @@ The temperature contour shows:
 
 With only ~35% of the fin area receiving adequate airflow (1.5 m/s in active regions vs 0.515 m/s average), there are parts of the heatsink mass that is underutilized, creating localized thermal buildup and reducing overall cooling efficiency.
 
-**Note:** Simulated temperatures are approximately 10°C higher than benchmark testing results, suggesting model conservatism or potential differences in boundary conditions/material properties compared to real-world operation. future sims will include radiation.
+**Notes:** 
+- Simulated temperatures run ~10 °C higher than public benchmarks. Likely causes include conservative boundary conditions, approximate material properties, and simplified contact resistances. 
+- Geometry fidelity: Accurate geometry available for fins, fans, enclosure. Vapor chamber/heat pipes (may not perfectly match FE dimensions). GPU die and PCB geometry are estimated from teardown references.
+- Power mapping: 450 W die / 150 W board used as a first-order split. With detailed PCB and package geometry, power would be allocated per component (die, VRAM packages, VRM stages) with appropriate surface fluxes and contact conductance.
